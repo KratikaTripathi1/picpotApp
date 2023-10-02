@@ -30,7 +30,7 @@ app.use((error, req, res, next) => {
 });
 
 mongoose
-  .connect(" your mongo db path")
+  .connect("mongodb+srv://picpotadmin:oSy4qepLMrWbCYeY@cluster0.bzfa3cv.mongodb.net/picpot?retryWrites=true&w=majority")
   .then(() => {
     app.listen(5000, () => {
       console.log("server running @ 5000");
